@@ -13,11 +13,6 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
-  const Test = await ethers.getContractFactory("Test");
-  const test = await Test.deploy();
-
-  await test.deployed();
-
   const Problem = await ethers.getContractFactory("Problem");
   const problem = await Problem.deploy(1, 1);
 
